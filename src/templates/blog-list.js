@@ -56,7 +56,7 @@ const BlogIndex = props => {
             key={post.node.wordpress_id}
             title={post.node.title}
             excerpt={post.node.excerpt}
-            media={post.node.featured_media}
+            media={post.node.jetpack_featured_media_url}
             slug={post.node.slug}
             index={index}
           />
@@ -112,16 +112,7 @@ export const query = graphql`
           title
           slug
           excerpt
-          featured_media {
-            media_type
-            localFile {
-              childImageSharp {
-                fixed(width: 700) {
-                  src
-                }
-              }
-            }
-          }
+          jetpack_featured_media_url
         }
       }
     }

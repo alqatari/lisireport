@@ -26,9 +26,11 @@ class Header extends Component {
       <StaticQuery
         query={graphql`
           {
-            wordpressWpSettings {
-              title
-              description
+            site  {
+                siteMetadata {
+                    title
+                    description
+                }
             }
             allWordpressPage {
               edges {
@@ -43,7 +45,7 @@ class Header extends Component {
         `}
         render={data => {
           const wordpressPages = data.allWordpressPage.edges;
-          const wordpressMetadata = data.wordpressWpSettings;
+          const wordpressMetadata = data.site.siteMetadata;
           return (
             <section className="hero is-primary is-medium">
               <div className="hero-head">

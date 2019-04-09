@@ -23,7 +23,7 @@ module.exports = {
         //Default options are for WP sites hosted on wordpress.com
         //For sites self hosted and other options check:
         //https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress
-        baseUrl: "gatsbystartercommunity.wordpress.com",
+        baseUrl: "lisireport.wordpress.com",
         protocol: "https",
         hostingWPCOM: true,
         useACF: false,
@@ -39,8 +39,8 @@ module.exports = {
         },
         searchAndReplaceContentUrls: {
           //Nested urls won't work. If you find a solution, please fill a PR request
-          sourceUrl: "https://gatsbystartercommunity.wordpress.com",
-          replacementUrl: "https://gatsbystartercommunity.netlify.com"
+          sourceUrl: "https://lisireport.wordpress.com",
+          replacementUrl: "https://lisir.netlify.com"
         }
       }
     },
