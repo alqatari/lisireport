@@ -74,7 +74,9 @@ export const query = graphql`
       categories {
         name
       }
-      author 
+      author {
+          name
+      }
     }
   }
 `;
