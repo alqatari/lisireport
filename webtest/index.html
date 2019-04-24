@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>WebTest from Repo Lisireport</title>
+</head>
+<body>
+<h1>WebTest from Repo Lisireport</h1>
+<pre>python -m SimpleHTTPServer 8000</pre>
+<pre>docker commit --change='CMD ["gatsby build", "-DFOREGROUND"]' -c "EXPOSE 8000" 06aae2f993b5 alqatari/buildify
+docker commit -c "EXPOSE 8000" 06aae2f993b5 alqatari/buildify
+cd /opt/repo/public && python -m SimpleHTTPServer 8999</pre>
+</body>
+</html>

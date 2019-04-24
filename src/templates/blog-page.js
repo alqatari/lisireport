@@ -16,6 +16,7 @@ export default props => {
         dangerouslySetInnerHTML={{ __html: page.title }}
       />
       <div dangerouslySetInnerHTML={{ __html: page.content }} />
+      <h3>hqq ci done but networking not</h3>
     </SimpleLayout>
   );
 };
