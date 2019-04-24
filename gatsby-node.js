@@ -1,9 +1,8 @@
 const path = require(`path`);
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
   console.log("HQQ START");
-  
+  const { createPage } = actions;
   const blogPage = path.resolve(`./src/templates/blog-page.js`);
   const blogList = path.resolve(`./src/templates/blog-list.js`);
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
